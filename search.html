@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Sol Intentions</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" href="solintentions_logo_favicon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Sol Intentions Logo">
+        </a>
+
+        <div class="nav-row">
+            <nav class="navigation" id="navigation">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="our-team.html">Our Team</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+
+            <form class="search-bar" action="search.html" method="get">
+                <input type="search" name="q" placeholder="Search..." aria-label="Search">
+                <button type="submit">⌕</button>
+            </form>
+        </div>
+
+    </div>
+</header>
+
+<main class="search-results-page">
+    <h1>Search Results</h1>
+
+    <div id="searchResults"></div>
+</main>
+
+<script src="script.js"></script>
+
+<div id="link-preview" class="link-preview" aria-hidden="true">
+    <iframe
+        id="link-preview-frame"
+        title="Link preview"
+        loading="lazy">
+    </iframe>
+</div>
+
+</body>
+</html>

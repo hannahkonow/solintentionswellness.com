@@ -531,8 +531,9 @@
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
             }
-            history.replaceState(null, '', window.location.pathname + window.location.search);
         }
+        const cleanPath = window.location.pathname.replace(/\.html$/, '');
+        history.replaceState(null, '', cleanPath + window.location.search);
     });
     </script>
 

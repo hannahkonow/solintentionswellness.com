@@ -2600,6 +2600,12 @@ html, body {
         text-underline-offset: 4px;
     }
 
+    .link-preview,
+    .link-preview.visible {
+        display: none !important;
+    }
+
+
 }
 
 

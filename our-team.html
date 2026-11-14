@@ -523,6 +523,19 @@
         </iframe>
     </div>
 
+    <script>
+    window.addEventListener('load', function() {
+        if (window.location.hash) {
+            const rawId = decodeURIComponent(window.location.hash.substring(1));
+            const target = document.getElementById(rawId);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+    });
+    </script>
+
 </body>
 
 </html>

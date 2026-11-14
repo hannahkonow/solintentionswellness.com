@@ -40,7 +40,7 @@ if (menuButton && navigation) {
 // =========================
 
 const currentPage =
-    window.location.pathname.split("/").pop() || "index.html";
+    window.location.pathname.split("/").pop() || "index";
 
 const navigationLinks =
     document.querySelectorAll(".navigation a");
@@ -59,25 +59,25 @@ navigationLinks.forEach(function (link) {
 });
 
 const searchPages = [
-    { title: "Home", url: "index.html" },
-    { title: "About Us", url: "about-us.html" },
-    { title: "Services", url: "services.html" },
-    { title: "Bundles", url: "bundles.html" },
-    { title: "Vibroacoustic Sound Bed Therapy", url: "vibroacoustic-sound-bed-therapy.html" },
-    { title: "Red Light Therapy", url: "red-light-therapy.html" },
-    { title: "PEMF BioMat Therapy", url: "pemf-biomat-therapy.html" },
-    { title: "Infrared Sauna", url: "infrared-sauna.html" },
-    { title: "Massage Therapy", url: "massage-therapy.html" },
-    { title: "Acupuncture Therapy", url: "acupuncture-therapy.html" },
-    { title: "Nutritional Therapy", url: "nutritional-therapy.html" },
-    { title: "Reiki & Chakra Balancing", url: "reiki-and-chakra-balancing.html" },
+    { title: "Home", url: "index" },
+    { title: "About Us", url: "about-us" },
+    { title: "Services", url: "services" },
+    { title: "Bundles", url: "bundles" },
+    { title: "Vibroacoustic Sound Bed Therapy", url: "vibroacoustic-sound-bed-therapy" },
+    { title: "Red Light Therapy", url: "red-light-therapy" },
+    { title: "PEMF BioMat Therapy", url: "pemf-biomat-therapy" },
+    { title: "Infrared Sauna", url: "infrared-sauna" },
+    { title: "Massage Therapy", url: "massage-therapy" },
+    { title: "Acupuncture Therapy", url: "acupuncture-therapy" },
+    { title: "Nutritional Therapy", url: "nutritional-therapy" },
+    { title: "Reiki & Chakra Balancing", url: "reiki-and-chakra-balancing" },
     { title: "Live Online Meditation and Yoga Classes", url: "https://theartofagingmindfully.com/live-online" },
-    { title: "Polyvagal Services & Life Coaching", url: "polyvagal-services-and-life-coaching.html" },
-    { title: "Recovery Coaching", url: "recovery-coaching.html" },
-    { title: "IV Infusion Therapy", url: "iv-infusion-therapy.html" },
+    { title: "Polyvagal Services & Life Coaching", url: "polyvagal-services-and-life-coaching" },
+    { title: "Recovery Coaching", url: "recovery-coaching" },
+    { title: "IV Infusion Therapy", url: "iv-infusion-therapy" },
 
-    { title: "Our Team", url: "our-team.html" },
-    { title: "Contact Us", url: "contact-us.html" }
+    { title: "Our Team", url: "our-team" },
+    { title: "Contact Us", url: "contact-us" }
 ];
 
 const searchInput = document.getElementById("searchInput");
@@ -412,7 +412,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // PREVENT INITIAL ABOUT PAGE SCROLL
-if (window.location.pathname.endsWith("about-us.html")) {
+if (window.location.pathname.endsWith("about-us")) {
     window.addEventListener("load", function () {
         if (window.location.hash) return;
         window.scrollTo(0, 0);
